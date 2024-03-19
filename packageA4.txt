@@ -1,0 +1,37 @@
+package com.assignment4;
+
+import java.util.Scanner;
+
+public class Student{
+        private String name;
+        private int roll_no;
+        private float marks;
+        
+        void acceptRecord(){
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("name:");
+        	this.name = sc.nextLine();
+        	
+        System.out.println("roll_no:");	
+        	this.roll_no = sc.nextInt();
+        	
+        System.out.println("marks:");
+        	this.marks = sc.nextFloat();
+        sc.close();	
+        }
+        
+        void printRecord(){
+        	System.out.printf("%-20s %-10d %-10.2f", this.name, this.roll_no, this.marks);
+        }         
+}
+
+class Program{
+
+public static void main(String[] args){
+	    Student student = new Student();	    
+	     student.acceptRecord();
+	     student.printRecord();
+}
+
+}

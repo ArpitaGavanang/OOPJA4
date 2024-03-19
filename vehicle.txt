@@ -1,0 +1,24 @@
+package com.assignment4;
+
+public class Vehicle {
+	
+	public void VehicleInfo(String name, int vehi_no){
+		System.out.println("Vehicle_Name:" + name +"   "+ "Vehicle_no.:" + vehi_no );
+	} 
+	
+	public void VehicleInfo(int vehi_no, String name ){
+		
+		System.out.println("Vehicle_no:" + vehi_no +"   "+ "Vehicle_Name:" + name );
+		
+	}
+}
+	
+	class Machine{
+	public static void main(String[] args) {
+		Vehicle vehi = new Vehicle();
+		vehi.VehicleInfo("TATA", 2345);
+		vehi.VehicleInfo(2456, "TOYOTA");
+
+	
+	}
+}

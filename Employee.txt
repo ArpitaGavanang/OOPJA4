@@ -1,0 +1,45 @@
+public class Employee {
+       private String name;
+       private String name1;
+       private String name2;
+       private int ID; 
+       private double sallary;
+       
+       public void EmployeeInfo(String name, double sallary) {
+    	   System.out.println("Name: " + name + "   "+ "Sallary: "+ sallary );
+       } 
+       
+       public void EmployeeInfo(String name, double sallary, int ID) {
+    	   System.out.println("Name: " + name + "   "+ "Sallary: "+ sallary + "   "+ "ID No.: "+ ID );
+       }
+       
+       public void EmployeeInfo1(String name, double sallary) {
+    	   System.out.println("Name: " + name + "   "+ "Sallary: "+ sallary );
+       } 
+       
+       public void EmployeeInfo1(double sallary, String name) {
+    	   System.out.println("Sallary: "+ sallary + "   " + "Name:" + name);
+       } 
+       
+       public void EmployeeName(String name, String name1, String name2) {
+    	   System.out.println("Name: " + name + "   "+ "Name1: "+ name1 + "   " + "Name2: "  + name2 );
+       } 
+       
+       public void EmployeeName(String name, String name1) {
+    	   System.out.println("Name: " + name + "   "+ "Name1: "+ name1 );
+       } 
+       
+}
+ class EPL{
+	public static void main(String[] args) {
+		Employee info = new Employee();
+		info.EmployeeInfo("Arpita", 45000, 19 );
+		info.EmployeeInfo("Arpita", 45000);
+		info.EmployeeInfo1("Arpita", 45000);
+		info.EmployeeInfo1(45000, "Arpita" );
+		info.EmployeeName("Arpita", "Rohan", "Abhay");
+		info.EmployeeName("Arpita", "Rohan");
+		
+		
+	}
+}
